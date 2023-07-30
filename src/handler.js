@@ -31,7 +31,7 @@ const addNoteHandler = (request, h) =>{
 };
 
 const getNotesHandler = (request, h) =>{
-    if (notes.length > 0) {
+    if (notes.length > -1) {
         const response = h.response({
             status: 'success',
             data: {
